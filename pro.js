@@ -103,17 +103,18 @@ async function updateWeatherInfo(city) {
   }
   function updataForecastsItems(weatherData) {
     console.log(weatherData)
-      const dateTaken = new Date()
-      const dateOptions = {
-        day: '2-digit',
-        month: 'short',
-      }
-    const dateResult = dateTaken.toLocaleDateString('en-GB', dateOptions)
     const {
       dt_txt: date ,
       weather: [{ id }] ,
       main : { temp }
     } = weatherData
+    
+      const dateTaken = new Date(date)
+      const dateOptions = {
+        day: '2-digit',
+        month: 'short',
+      }
+    const dateResult = dateTaken.toLocaleDateString('en-GB', dateOptions)
     const forecastItem =`
         <div class="forecast-item">
           <h5 class="forecast-item-data">${dateResult}</h5>
