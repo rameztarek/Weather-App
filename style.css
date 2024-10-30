@@ -184,6 +184,7 @@ body::before{
   }
   .section-message img {
     background-size: cover;
+    width: 160px;
   }
 }
 /*END @ MAIDE */
