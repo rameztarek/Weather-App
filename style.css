@@ -186,5 +186,8 @@ body::before{
     background-size: cover;
     width: 160px;
   }
+    .change-degree-btn{
+    font-size: 20px;
+  }
 }
 /*END @ MAIDE */
