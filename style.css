@@ -175,3 +175,15 @@ body::before{
   width: fit-content;
 }
 /* END SECTION MESSAGE*/
+/*START @ MAIDE */
+@media (max-width: 900px) {
+  .weather-info{
+    width: 310px;
+    height: 100%;
+    background-size: cover;
+  }
+  .section-message img {
+    background-size: cover;
+  }
+}
+/*END @ MAIDE */
