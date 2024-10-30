@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pro.js">
+  <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+  <div class="container">
+    <div class="search-bar">
+      <input class="city-input" type="search" placeholder="Search City">
+      <button class="search-btn">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span> 
+      </button>
+    </div>
+    <section class="weather-info" style="display: none;">
+      <div class="location-data-container">
+        <div class="location">
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <h4 class="country-txt">Egypt</h4>
+        </div>
+        <h5 class="current-data-txt">Wed, 07 Aug</h5>
+      </div>
+      <div class="weather-summary-container">
+        <img src="assets/assets/weather/" class="weather-summary-img">
+        <div class="weather-summary-info">
+          <button class="change-degree-btn">°F</button>
+          <h1 class="temp-txt-F" style="display: none;">24°F</h1>
+          <h1 class="temp-txt">24°C</h1>
+          <h3 class="condition-txt">clouds</h3>
+        </div>
+      </div>
+      <div class="weather-conditions-container">
+        <div class="condition-item">
+          <span><i class="fa-solid fa-droplet"></i></span>
+          <div class="condition-info">
+            <h5 class="regular-txt">Humidity</h5>
+            <h5 class="humidity-value-txt">55%</h5>
+          </div>
+        </div>
+        <div class="condition-item">
+          <span><i class="fa-solid fa-wind"></i></span>
+          <div class="condition-info">
+            <h5 class="regular-txt">Wind Speed</h5>
+            <h5 class="wind-value-txt">2 M/s</h5>
+          </div>
+        </div>
+      </div>
+      <div class="forecast-items-container">
+        <div class="forecast-item">
+          <h5 class="forecast-item-data">05 Aug</h5>
+          <img src="assets/assets/weather/thunderstorm.svg" class="forecast-item-img">
+          <h5 class="forecast-item-temp">24°C</h5>
+        </div>
+        <div class="forecast-item">
+          <h5 class="forecast-item-data">05 Aug</h5>
+          <img src="assets/assets/weather/thunderstorm.svg" class="forecast-item-img">
+          <h5 class="forecast-item-temp">24°C</h5>
+        </div>
+        <div class="forecast-item">
+          <h5 class="forecast-item-data">05 Aug</h5>
+          <img src="assets/assets/weather/thunderstorm.svg" class="forecast-item-img">
+          <h5 class="forecast-item-temp">24°C</h5>
+        </div>
+        <div class="forecast-item">
+          <h5 class="forecast-item-data">05 Aug</h5>
+          <img src="assets/assets/weather/thunderstorm.svg" class="forecast-item-img">
+          <h5 class="forecast-item-temp">24°C</h5>
+        </div>
+      </div>
+    </section>
+    <section class="search-city section-message">
+      <img src="assets/assets/message/search-city.png">
+      <div>
+        <h1>Search City</h1>
+        <h4 class="reguler-txt">
+          Find Out The Weather Conditions Of Theer City
+        </h4>
+      </div>
+    </section>
+    <section class="not-found section-message" style="display: none;">
+      <img src="assets/assets/message/not-found.png">
+      <div>
+        <h1>Search City</h1>
+        <h4 class="reguler-txt">
+          Find Out The Weather Conditions Of Theer City
+        </h4>
+      </div>
+    </section>
+  </div>
+  <script src="pro.js"></script>
+</body>
+</html>
+
